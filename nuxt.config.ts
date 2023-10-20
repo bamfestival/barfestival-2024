@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  tailwindcss: {
+    viewer: true,
+    // Options
+  },
   webVitals: {
     provider: 'log',
     debug: true, // debug enable metrics reporting on dev environments
