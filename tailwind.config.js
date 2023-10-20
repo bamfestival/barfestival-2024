@@ -14,7 +14,7 @@ export default {
         paars: '#8b1c66',
         lichtblauw: '#009de1',
         blauw: '#0080c7',
-        paars: '5f2f86',
+        donkerpaars: '5f2f86',
         donkerblauw: '#1e125e',
       },
       fontFamily: {
