@@ -37,7 +37,7 @@ export default defineNuxtConfig({
  
   image: {
     provider: "ipx",
-    domains: ['api.bamfestival.nl','cms.bamfestival.nl'],
+    domains: ['api.bamfestival.nl','cms.bamfestival.nl','yellow-beach-0eae5a003.4.azurestaticapps.net'],
     presets: {
         cover: {
         modifiers: {
