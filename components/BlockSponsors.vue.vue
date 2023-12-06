@@ -7,7 +7,7 @@
   <div class="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-12 lg:mt-8">
         <div v-for="sponsor in sponsoren" :key="sponsor.id" class="col-span-1 flex justify-center  py-8 px-8">
           <a :href="sponsor.field_link.uri " target="_blank" :title="`Website ${ sponsor.title}`">
-           <nuxt-img :src="`${ config.public.apiBase }${sponsor.field_image.uri.url }`"  format="webp" :alt="`Logo ${ sponsor.title }, sponsor van BAM! Festival Hengelo (Ov.)`" loading="lazy"></nuxt-img>
+           <nuxt-img :src="`${ config.public.apiBase }${sponsor.field_image.uri.url }`"  format="webp" :alt="`Logo ${ sponsor.title }, sponsor van BAM! Festival Hengelo (Ov.)`"></nuxt-img>
         </a>
         </div>
   </div>

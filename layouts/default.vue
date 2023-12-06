@@ -204,7 +204,10 @@
         <!-- Markup shared across all pages, ex: NavBar -->
         <NuxtPage />
       </div>
-    
+      <div  v-if="route.path === '/'" >
+        <!-- Sponserblock-->
+        <BlockSponsorsVue />
+      </div>
     
     
       <footer class="bg-white" aria-labelledby="footer-heading">
@@ -283,7 +286,12 @@
     <script setup lang="ts">
     
     import { defineComponent, h } from 'vue'
+    import { ref, watch } from 'vue';
+
+    const route = useRoute();
+ 
     
+
     const runtimeConfig = useRuntimeConfig();
     const { data:articles } = await useFetch('https://cms.bamfestival.nl/jsonapi/node/article?page[limit]=6&filter[status][value]=1&filter[promote][value]=1&sort=-created&include=field_image&field_video&field_tags&jsonapi_include=1&page[limit]=3');
 

@@ -5,8 +5,7 @@
   </div>
   <div>
     <p>{{ config.public.sponsorenApi }}</p>
-    <BlockSponsorsVue/>
-    <pre>{{  sponsoren }}</pre>
+    
    
   </div>  
  
@@ -16,7 +15,7 @@
     
     const route = useRoute();
     const config = useRuntimeConfig();
-    const sponsoren = useState('sponsoren');
+   
 
 
     
