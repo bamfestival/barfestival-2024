@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
         
     public: {
-        apiBase: process.env.API_BASE_URL || "https://api.bamfestival.nl/",
+        apiBase: process.env.API_BASE_URL || "https://api.bamfestival.nl",
         sponsorenApi: (process.env.API_BASE_URL || "https://api.bamfestival.nl") + '/jsonapi/node/sponsors?filter[status][value]=1&sort=-field_weight,title&include=field_image&jsonapi_include=1&fields[node--sponsors]=title,field_link,sticky,promote,field_image',
     }
 },
