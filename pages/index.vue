@@ -4,7 +4,7 @@
     <p>Current route: {{ route.path }}</p>
   </div>
   <div>
-    <p>{{ config.public.sponsorenApi }}</p>
+    
     
    
   </div>  

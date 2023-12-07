@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig(event);
-  const photographersApi = config.public.photographersApi;
-  const { data: result } = await $fetch(photographersApi);
+  const aftermoviesApi = config.public.aftermoviesApi;
+  const { data: result } = await $fetch(aftermoviesApi);
   
  return result;
 })
